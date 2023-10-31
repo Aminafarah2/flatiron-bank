@@ -24,7 +24,7 @@ function App() {
         body:JSON.stringify(newTransac)
       }
 
-      fetch("http://localhost:3001/transactions",postFormData)
+      fetch("http://localhost:3000/transactions",postFormData)
       .then((r) => r.json())
       .then(newTransac => setTransactions(transaction => [...transaction,newTransac]))
       .catch(error => alert(error))      

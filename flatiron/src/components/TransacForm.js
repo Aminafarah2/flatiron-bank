@@ -11,6 +11,7 @@ function TransacForm({ onSubmitting }) {
   function handleSubmit(event) {
     event.preventDefault();
     onSubmitting(formData);
+    
   }
 
   function handleChange(event) {
@@ -52,7 +53,7 @@ function TransacForm({ onSubmitting }) {
         onChange={handleChange}
         value={formData.amount}
       />
-      <button> Add Transaction</button>
+      <button type= "submit"> Add Transaction</button>
     </form>
   );
 }

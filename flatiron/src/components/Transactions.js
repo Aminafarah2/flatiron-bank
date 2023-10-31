@@ -15,9 +15,10 @@ function Transactions ({transactions}) {
       </thead> 
       <tbody>
         {transactions.map(transaction => {
-          return <TransacItem key={transaction.id} date={transaction.date} description={transaction.description}
-          category={transaction.category} amount={transaction.amount}/>
-        })}
+           return <TransacItem key={transaction.id} date={transaction.date} description={transaction.description}
+           category={transaction.category} amount={transaction.amount}/>
+         })}
+        
       </tbody>
 
     </table>
