@@ -8,7 +8,7 @@ function App() {
    const [transactions,setTransactions] = useState([])
    const [search,setSearch] = useState("")   
    useEffect(() => {
-    fetch("http://localhost:3001/transactions")
+    fetch("http://localhost:3000/transactions")
       .then((r) => r.json())
       .then((transactions) => setTransactions(transactions))
     }, []); 
@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">   
-      The Royal Bank of FlatIron  
+      The Flatiron Bank
       </header>
         <TransacFilter onSearching={handleOnSearch}/>
         <TransacForm onSubmitting={handleTransacUpdate}/> 
